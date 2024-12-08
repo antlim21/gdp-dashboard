@@ -20,7 +20,7 @@ DB_PASSWORD = "L!moAnto2!"
 # -----------------------------------------------------------------------------
 # Declare a function to get the data from the RDS MySQL database.
 
-@st.cache_data
+#@st.cache_data
 def get_ride_data():
     """
     Connect to the MySQL database and retrieve average duration and distance
