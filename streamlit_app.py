@@ -39,7 +39,7 @@ def get_ride_data():
         DATE(start_time) AS day,
         AVG(duration) AS avg_duration,
         AVG(distance) AS avg_distance
-    FROM ride_data
+    FROM bike_rides
     GROUP BY DATE(start_time)
     ORDER BY DATE(start_time);
     """
