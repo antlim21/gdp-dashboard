@@ -75,12 +75,6 @@ filtered_df = ride_df[(ride_df['day'] >= selected_dates[0]) & (ride_df['day'] <=
 
 st.subheader("Average Duration and Distance over Time")
 
-# You can show both metrics on the same chart using a wide dataframe format
-# For example, you could try:
-chart_df = filtered_df.set_index('day')[['avg_duration', 'avg_distance']]
-
-st.line_chart(chart_df)
-
 # If you want to show metrics separately:
 st.subheader("Average Duration by Day")
 st.line_chart(filtered_df.set_index('day')['avg_duration'])
